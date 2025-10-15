@@ -7,9 +7,49 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <main>
-      <h1>Bem-vindo ao projeto Ecommerce-Syntaxwaer</h1>
-      <p>Estrutura inicial criada: <code>src/</code> com diretórios para CSS, docs, favicons, fonts, icons e images.</p>
+    <a class="skip-link" href="#main">Ir para o conteúdo</a>
+    <header class="site-header header--primary" role="banner">
+      <div class="container header-inner">
+        <div class="logo logo--brand" aria-hidden="true"><!-- logo aqui --></div>
+        <nav class="site-nav main-nav" role="navigation" aria-label="Navegação principal">
+          <ul class="nav-list nav-list--primary">
+            <!-- links de navegação aqui -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-main" role="main">
+      <!-- Seção hero -->
+      <section id="hero" class="hero hero--lead" aria-label="Seção principal (hero)">
+        <!-- estrutura do hero (imagem destaque / chamada) -->
+      </section>
+
+      <!-- Seção de categorias de tênis -->
+      <section id="categories" class="categories categories--shoes" aria-label="Categorias de tênis">
+        <!-- cards ou links para categorias -->
+      </section>
+
+      <!-- Grid com produtos em destaque -->
+      <section id="featured-products" class="featured-products featured-products--grid" aria-label="Produtos em destaque">
+        <div class="product-grid grid" role="list">
+          <!-- items do grid aqui -->
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer footer--primary" role="contentinfo">
+      <div class="container footer-inner footer-inner--content">
+        <section class="footer-contact contact" aria-label="Informações de contato">
+          <!-- informações de contato (endereço, telefone, e-mail) -->
+        </section>
+
+        <nav class="footer-nav footer-nav--links" role="navigation" aria-label="Links do rodapé">
+          <ul class="footer-links footer-links--list">
+            <!-- links do rodapé aqui -->
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
