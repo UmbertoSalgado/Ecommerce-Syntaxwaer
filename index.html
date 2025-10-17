@@ -1,59 +1,79 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Projeto Ecommerce-Syntaxwaer</title>
-    <link rel="stylesheet" href="./src/css/reset.css" />
-    <link rel="stylesheet" href="./src/css/layout.css" />
-    <link rel="stylesheet" href="./src/css/variables.css" />
-    <link rel="stylesheet" href="./src/css/base.css">
-  </head>
-  <body>
-    <h1>texte</h1>
-    <a class="skip-link" href="#main">Ir para o conteúdo</a>
-    <header class="site-header header--primary" role="banner">
-      <div class="container header-inner">
-        <div class="logo logo--brand" aria-hidden="true"><!-- logo aqui --></div>
-        <nav class="site-nav main-nav" role="navigation" aria-label="Navegação principal">
-          <ul class="nav-list nav-list--primary">
-            <!-- links de navegação aqui -->
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SyntaxWear - Tênis e Sneakers Online</title>
+  <link rel="stylesheet" href="./src/css/reset.css" />
+  <link rel="stylesheet" href="./src/css/layout.css" />
+  <link rel="stylesheet" href="./src/css/variables.css" />
+  <link rel="stylesheet" href="./src/css/base.css">
+  <link rel="stylesheet" href="./src/css/components/header.css" />
+</head>
+
+<body>
+  <header class="header" role="banner">
+    <h1 class="logo">
+      <a href="#" title="SyntaxWear - Tênis e Sneakers Online">
+        <img src="./src/images/logo/Logo.svg" alt="SyntaxWear - Tênis e Sneakers Online">
+      </a>
+    </h1>
+      <nav class="nav-center" aria-label="Categorias Principais">
+        <ul>
+          <li><a href="#">Masculino</a></li>
+          <li><a href="#">Feminino</a></li>
+          <li><a href="#">Outlet</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-right" role="navigation" aria-label="Menu rápido">
+        <ul class="utility-list">
+          <li class="utility-item"><a href="#">Nossas lojas</a></li>
+          <li class="utility-item"><a href="#">Sobre</a></li>
+          <li class="utility-item utility-icon"><a href="#" aria-label="Minha conta"><img
+                src="./src/images/icons/user.svg" alt="Ícone de usuário"></a></li>
+          <li class="utility-item utility-icon"><a href="#" aria-label="Ajuda"><img src="./src/images/icons/help.svg"
+                alt="Ícone de ajuda"></a></li>
+          <li class="utility-item utility-icon"><a href="#" aria-label="Bolsa"><img src="./src/images/icons/bag.svg"
+                alt="Ícone do carrinho"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <!-- Seção hero -->
+    <section id="hero" class="hero hero--lead" aria-label="Seção principal (hero)">
+      <!-- estrutura do hero (imagem destaque / chamada) -->
+    </section>
+
+    <!-- Seção de categorias de tênis -->
+    <section id="categories" class="categories categories--shoes" aria-label="Categorias de tênis">
+      <!-- cards ou links para categorias -->
+    </section>
+
+    <!-- Grid com produtos em destaque -->
+    <section id="featured-products" class="featured-products featured-products--grid" aria-label="Produtos em destaque">
+      <div class="product-grid grid" role="list">
+        <!-- items do grid aqui -->
       </div>
-    </header>
+    </section>
+  </main>
 
-    <main id="main" class="site-main" role="main">
-      <!-- Seção hero -->
-      <section id="hero" class="hero hero--lead" aria-label="Seção principal (hero)">
-        <!-- estrutura do hero (imagem destaque / chamada) -->
+  <footer class="site-footer footer--primary" role="contentinfo">
+    <div class="container footer-inner footer-inner--content">
+      <section class="footer-contact contact" aria-label="Informações de contato">
+        <!-- informações de contato (endereço, telefone, e-mail) -->
       </section>
 
-      <!-- Seção de categorias de tênis -->
-      <section id="categories" class="categories categories--shoes" aria-label="Categorias de tênis">
-        <!-- cards ou links para categorias -->
-      </section>
+      <nav class="footer-nav footer-nav--links" role="navigation" aria-label="Links do rodapé">
+        <ul class="footer-links footer-links--list">
+          <!-- links do rodapé aqui -->
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
 
-      <!-- Grid com produtos em destaque -->
-      <section id="featured-products" class="featured-products featured-products--grid" aria-label="Produtos em destaque">
-        <div class="product-grid grid" role="list">
-          <!-- items do grid aqui -->
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer footer--primary" role="contentinfo">
-      <div class="container footer-inner footer-inner--content">
-        <section class="footer-contact contact" aria-label="Informações de contato">
-          <!-- informações de contato (endereço, telefone, e-mail) -->
-        </section>
-
-        <nav class="footer-nav footer-nav--links" role="navigation" aria-label="Links do rodapé">
-          <ul class="footer-links footer-links--list">
-            <!-- links do rodapé aqui -->
-          </ul>
-        </nav>
-      </div>
-    </footer>
-  </body>
 </html>
