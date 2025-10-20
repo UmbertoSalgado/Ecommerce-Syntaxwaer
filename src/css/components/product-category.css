@@ -1,0 +1,72 @@
+.category-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.category-card{
+    width: 317px;
+    height: 500px;
+    border-radius: 15px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; removidos após adição do position: relative */
+    position: relative;
+    overflow: hidden;/*esconde tudo que vase para fora do card*/
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;/*atalho para evitar top:0; left:0; right:0; bottom:0;*/
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25); /* camada escura sobre a imagem */
+    z-index: 1; /* garante que a sobreposição fique acima da imagem */
+    transition: background-color 0.3s;
+}
+
+.category-name{ 
+    margin-top: 10px;
+    text-align: center;/* centraliza o texto no meio do botão*/
+    position: absolute;/* posicionamento absoluto, permite modificar posição do botão */
+    left: 50%;/* centraliza horizontalmente */
+    top: 50%;/* centraliza verticalmente */
+    transform: translate(-50%, -50%);/* ajusta a posição para o centro exato, todos os valores acima são táticas para poder reposicionar elemento*/
+    z-index: 2; /* garante que o texto fique acima da sobreposição, fica acima do z-index:1 */
+}
+
+/* .category-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.casual{
+    background-image: url(../../images/produtos/casual.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.esporte{
+    background-image: url(../../images/produtos/esporte.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.futurista{
+    background-image: url(../../images/produtos/futurista.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.moderno {
+    background-image: url(../../images/produtos/moderno.jpg);
+    background-size: cover;
+    background-position: center;
+}
