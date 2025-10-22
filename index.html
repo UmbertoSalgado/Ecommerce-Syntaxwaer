@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./src/css/components/hero.css" />
   <link rel="stylesheet" href="./src/css/components/product-category.css" />
   <link rel="stylesheet" href="./src/css/components/product-grid.css" />
+  <link rel="stylesheet" href="./src/css/components/footer.css" />
 </head>
 
 <body>
@@ -22,6 +23,7 @@
         <img src="./src/images/logo/Logo.svg" alt="SyntaxWear - Tênis e Sneakers Online">
       </a>
     </h1>
+
     <nav class="nav-center" aria-label="Categorias Principais">
       <ul>
         <li><a href="#">Masculino</a></li>
@@ -30,23 +32,30 @@
       </ul>
     </nav>
 
-    <nav class="nav-right" role="navigation" aria-label="Menu rápido">
+    <nav class="nav-right" role="navigation" aria-label="Acesso rápido">
       <ul class="utility-list">
-        <li class="utility-item"><a href="#">Nossas lojas</a></li>
-        <li class="utility-item"><a href="#">Sobre</a></li>
-        <li class="utility-item utility-icon"><a href="#" aria-label="Minha conta"><img
-              src="./src/images/icons/user.svg" alt="Ícone de usuário"></a></li>
-        <li class="utility-item utility-icon"><a href="#" aria-label="Ajuda"><img src="./src/images/icons/help.svg"
-              alt="Ícone de ajuda"></a></li>
-        <li class="utility-item utility-icon"><a href="#" aria-label="Bolsa"><img src="./src/images/icons/bag.svg"
-              alt="Ícone do carrinho"></a></li>
+        <li><a href="#">Nossas lojas</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li>
+          <a href="#" aria-label="Minha conta">
+            <img src="./src/images/icons/user.svg" alt="Ícone de usuário">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Ajuda">
+            <img src="./src/images/icons/help.svg" alt="Ícone de ajuda">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Bolsa">
+            <img src="./src/images/icons/bag.svg" alt="Ícone do carrinho">
+          </a>
+        </li>
       </ul>
     </nav>
-    </div>
   </header>
 
   <main role="main">
-
     <section class="hero-section" aria-label="Seção principal (hero)">
       <!-- estrutura do hero (imagem destaque / chamada) -->
       <div class="hero-overlay">
@@ -111,78 +120,90 @@
       <div class="card sneaker-silver"></div>
     </section>
   </main>
-
-  <footer class="footer" role="contentinfo">
+  <!--Footer-->
+  <footer class="site-footer" id="footer" role="contentinfo">
     <div class="footer-content">
       <!-- Coluna 1: Newsletter e Redes Sociais -->
-      <div class="footer-column">
-        <div class="newsletter">
-          <p>Inscreva-se em nosso e-mail</p>
-          <input type="email" placeholder="Digite seu e-mail aqui" aria-label="Digite seu e-mail para newsletter">
-        </div>
-        <div class="social-media">
-          <p>Redes sociais</p>
-          <div class="social-icons">
-            <a href="#" aria-label="Instagram"><img src="./src/images/icons/instagram.svg" alt="Instagram"></a>
-            <a href="#" aria-label="Youtube"><img src="./src/images/icons/youtube.svg" alt="Youtube"></a>
-            <a href="#" aria-label="TikTok"><img src="./src/images/icons/tiktok.svg" alt="TikTok"></a>
-            <a href="#" aria-label="Facebook"><img src="./src/images/icons/facebook.svg" alt="Facebook"></a>
-          </div>
+      <div class="footer-right">
+        <form class="newsletter-form">
+          <label for="newsletter-email">Inscreva-se em nosso e-mail</label>
+          <input type="email" placeholder="email@email.com" aria-label="Digite seu e-mail para newsletter">
+        </form>
+        <div class="footer-social">
+          <span>Redes sociais</span>
+          <ul>
+            <li>
+              <a href="#" aria-label="Instagram"><img src="./src/images/favicons/instagram.svg" alt="Instagram"></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Whatsapp"><img src="./src/images/favicons/whatsapp.svg" alt="Whatsapp"></a>
+            </li>
+            <li>
+              <a href="#" aria-label="TikTok"><img src="./src/images/favicons/tiktok.svg" alt="TikTok"></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Facebook"><img src="./src/images/favicons/facebook.svg" alt="Facebook"></a>
+            </li>
+          </ul>
         </div>
       </div>
 
       <!-- Coluna 2: Links Masculino -->
-      <div class="footer-column">
-        <h3>Masculino</h3>
+      <nav class="footer-nav" id="footer">
         <ul>
-          <li><a href="#">Casual</a></li>
-          <li><a href="#">Esporte</a></li>
-          <li><a href="#">Moderno</a></li>
-          <li><a href="#">Futurista</a></li>
-        </ul>
-      </div>
+          <li>
+            <strong>Masculino</strong>
+            <ul>
+              <li><a href="#">Casual</a></li>
+              <li><a href="#">Esporte</a></li>
+              <li><a href="#">Moderno</a></li>
+              <li><a href="#">Futurista</a></li>
+            </ul>
+          </li>
+          <!-- Coluna 3: Links Feminino -->
+          <li>
+            <strong>Feminino</strong>
+            <ul>
+              <li><a href="#">Casual</a></li>
+              <li><a href="#">Esporte</a></li>
+              <li><a href="#">Moderno</a></li>
+              <li><a href="#">Futurista</a></li>
+            </ul>
+          </li>
 
-      <!-- Coluna 3: Links Feminino -->
-      <div class="footer-column">
-        <h3>Feminino</h3>
-        <ul>
-          <li><a href="#">Casual</a></li>
-          <li><a href="#">Esporte</a></li>
-          <li><a href="#">Moderno</a></li>
-          <li><a href="#">Futurista</a></li>
-        </ul>
-      </div>
+          <!-- Coluna 4: Links Outlet -->
+          <li>
+            <strong>Outlet</strong>
+            <ul>
+              <li><a href="#">Masculino</a></li>
+              <li><a href="#">Feminino</a></li>
+            </ul>
+          </li>
 
-      <!-- Coluna 4: Links Outlet -->
-      <div class="footer-column">
-        <h3>Outlet</h3>
-        <ul>
-          <li><a href="#">Masculino</a></li>
-          <li><a href="#">Feminino</a></li>
-        </ul>
-      </div>
+          <!-- Coluna 5: Links Nossas lojas -->
+          <li>
+            <strong>Nossas lojas</strong>
+            <ul>
+              <li><a href="#">Loja física</a></li>
+              <li><a href="#">Loja online</a></li>
+            </ul>
+          </li>
 
-      <!-- Coluna 5: Links Nossas lojas -->
-      <div class="footer-column">
-        <h3>Nossas lojas</h3>
-        <ul>
-          <li><a href="#">Loja física</a></li>
-          <li><a href="#">Loja online</a></li>
+          <!-- Coluna 6: Links Sobre -->
+          <li>
+            <strong>Sobre</strong>
+            <ul>
+              <li><a href="#">Quem somos</a></li>
+              <li><a href="#">Missão</a></li>
+            </ul>
+          </li>
         </ul>
-      </div>
-
-      <!-- Coluna 6: Links Sobre -->
-      <div class="footer-column">
-        <h3>Sobre</h3>
-        <ul>
-          <li><a href="#">Quem somos</a></li>
-          <li><a href="#">Missão</a></li>
-        </ul>
-      </div>
+      </nav>
     </div>
 
     <!-- Copyright -->
-    <div class="copyright">
+     <hr/>
+    <div class="footer-copy">
       <p>Copyright. All Rights Reserved</p>
     </div>
   </footer>
