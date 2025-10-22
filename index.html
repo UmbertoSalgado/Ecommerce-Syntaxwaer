@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./src/css/components/header.css" />
   <link rel="stylesheet" href="./src/css/components/hero.css" />
   <link rel="stylesheet" href="./src/css/components/product-category.css" />
+  <link rel="stylesheet" href="./src/css/components/product-grid.css" />
 </head>
 
 <body>
@@ -92,24 +93,97 @@
     </section>
 
     <!-- Grid com produtos em destaque -->
-    <section id="featured-products" class="featured-products featured-products--grid" aria-label="Produtos em destaque">
-      <div class="product-grid grid" role="list">
-        <!-- items do grid aqui -->
+    <section class="grid-section" aria-label="Produtos em destaque">
+      <div class="card highlight">
+        <div class="top1-content">
+          <h3 class="card-title">Krypton One</h3>
+          <p class="card-subtitle">Estilo urbano com atitude</p>
+          <div class="cta-group">
+            <a href="#" class="btn btn-outline">Feminino</a>
+            <a href="#" class="btn btn-outline">Masculino</a>
+          </div>
+        </div>
       </div>
+      <div class="card sneaker-purple"></div>
+      <div class="card model"></div>
+      <div class="card sneaker-color"></div>
+      <div class="card sneaker-white"></div>
+      <div class="card sneaker-silver"></div>
     </section>
   </main>
 
-  <footer class="site-footer footer--primary" role="contentinfo">
-    <div class="container footer-inner footer-inner--content">
-      <section class="footer-contact contact" aria-label="Informações de contato">
-        <!-- informações de contato (endereço, telefone, e-mail) -->
-      </section>
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <!-- Coluna 1: Newsletter e Redes Sociais -->
+      <div class="footer-column">
+        <div class="newsletter">
+          <p>Inscreva-se em nosso e-mail</p>
+          <input type="email" placeholder="Digite seu e-mail aqui" aria-label="Digite seu e-mail para newsletter">
+        </div>
+        <div class="social-media">
+          <p>Redes sociais</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><img src="./src/images/icons/instagram.svg" alt="Instagram"></a>
+            <a href="#" aria-label="Youtube"><img src="./src/images/icons/youtube.svg" alt="Youtube"></a>
+            <a href="#" aria-label="TikTok"><img src="./src/images/icons/tiktok.svg" alt="TikTok"></a>
+            <a href="#" aria-label="Facebook"><img src="./src/images/icons/facebook.svg" alt="Facebook"></a>
+          </div>
+        </div>
+      </div>
 
-      <nav class="footer-nav footer-nav--links" role="navigation" aria-label="Links do rodapé">
-        <ul class="footer-links footer-links--list">
-          <!-- links do rodapé aqui -->
+      <!-- Coluna 2: Links Masculino -->
+      <div class="footer-column">
+        <h3>Masculino</h3>
+        <ul>
+          <li><a href="#">Casual</a></li>
+          <li><a href="#">Esporte</a></li>
+          <li><a href="#">Moderno</a></li>
+          <li><a href="#">Futurista</a></li>
         </ul>
-      </nav>
+      </div>
+
+      <!-- Coluna 3: Links Feminino -->
+      <div class="footer-column">
+        <h3>Feminino</h3>
+        <ul>
+          <li><a href="#">Casual</a></li>
+          <li><a href="#">Esporte</a></li>
+          <li><a href="#">Moderno</a></li>
+          <li><a href="#">Futurista</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 4: Links Outlet -->
+      <div class="footer-column">
+        <h3>Outlet</h3>
+        <ul>
+          <li><a href="#">Masculino</a></li>
+          <li><a href="#">Feminino</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 5: Links Nossas lojas -->
+      <div class="footer-column">
+        <h3>Nossas lojas</h3>
+        <ul>
+          <li><a href="#">Loja física</a></li>
+          <li><a href="#">Loja online</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 6: Links Sobre -->
+      <div class="footer-column">
+        <h3>Sobre</h3>
+        <ul>
+          <li><a href="#">Quem somos</a></li>
+          <li><a href="#">Missão</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>Copyright. All Rights Reserved</p>
     </div>
   </footer>
 </body>
